@@ -1,4 +1,4 @@
-#Arhitectura Calculatoarelor
+# Arhitectura Calculatoarelor
 
-##Lab3
-ex2 - Se da un vector si trebuie calculat cate numere pare contine<br>
+## Lab3 <br>
+ex2 - Se da un vector si trebuie calculat cate numere pare contine <br>
