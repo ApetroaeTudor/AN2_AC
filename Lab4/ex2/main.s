@@ -1,6 +1,6 @@
 
 .data
-myArray: .word 10, 2, 5,12, 45, 0
+myArray: .word 'a', 'b', 'c','d', 'e', 0
 
 .text
 
@@ -30,7 +30,7 @@ afisRec:
 
 
     lw a1,0(a0)
-    addi a0,zero,1
+    addi a0,zero,11
     ecall
 
     addi a0,zero,11
