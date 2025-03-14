@@ -1,0 +1,61 @@
+.data
+
+.text
+
+.equ COMM,  0x40600004
+
+.equ N, 4 # va face 1+2+3
+
+
+.global main
+
+main:
+    addi sp,sp,-12
+    sw a0,4(sp)
+    sw ra,8(sp)
+    sw a1,12(sp)
+
+    addi a0,zero,0 # inceputul sirului 0..N
+    addi a1,zero,0
+
+
+    jal ra,sum_all
+    #in a1 voi tine suma
+
+
+    li t0,COMM
+    addi a1,a1,48
+    sw a1,0(t0)
+
+
+    lw a0,4(sp)
+    lw ra,8(sp)
+    lw a1,12(sp)
+    addi sp,sp,12
+
+    ret
+
+
+sum_all:
+    mv t0,a0 #pun in t0 nr curent din a0 
+    li t1,N #in t1 am finalul secventei
+
+    
+    beq t0,t1,fin
+
+    addi sp,sp,-8
+    sw a0,4(sp)
+    sw ra,8(sp)
+
+    add a1,a1,a0
+    addi a0,a0,1
+
+    jal ra, sum_all
+
+    lw a0,4(sp)
+    lw ra,8(sp)
+    addi sp,sp,8
+
+    fin:
+
+    jalr zero,0(ra)
