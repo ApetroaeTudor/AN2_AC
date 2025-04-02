@@ -1,0 +1,8 @@
+@0
+CC  // valoarea de la adresa 0 (11001100 binar)
+AA  // valoarea de la adresa 1 (10101010 binar)
+
+@A  // salt la adresa 8'hA (10 zecimal)
+5A  // valoarea de la adresa 8'hA (01011010 binar)
+69  // valoarea de la adresa 8'hB (01101001 binar)
+
