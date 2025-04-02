@@ -1,4 +1,4 @@
 # Arhitectura Calculatoarelor
 
-## Lab3 <br>
-ex2 - Se da un vector si trebuie calculat cate numere pare contine <br>
+## Lab6 <br>
+Memorie sincrona/asincrona. Register file. ALU <br>
